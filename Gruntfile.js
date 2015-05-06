@@ -28,9 +28,14 @@ module.exports = function(grunt) {
                     "angular/angular.min.js",
                     "angular/angular.min.js.map",
                     "angular/angular-csp.css",
-                    "../client/stylesheet.css"
                 ],
                 "dest": "server/public/vendor"
+            },
+            css: {
+                expand: true,
+                cwd: "client/",
+                src: "stylesheet.css",
+                "dest": "server/public/assets/css"
             }
         }
     });

@@ -26,5 +26,5 @@ app.controller("IndexController", ['$scope', '$http', function($scope, $http) {
         return $http.post('/add', cat).then(fetchCats);
     };
     //run right away, in case there aren't any kittehs in teh databasxorz.
-    //fetchCats();
+    fetchCats();
 }]);

@@ -27,7 +27,8 @@ module.exports = function(grunt) {
                 src: [
                     "angular/angular.min.js",
                     "angular/angular.min.js.map",
-                    "angular/angular-csp.css"
+                    "angular/angular-csp.css",
+                    "../client/stylesheet.css"
                 ],
                 "dest": "server/public/vendor"
             }
